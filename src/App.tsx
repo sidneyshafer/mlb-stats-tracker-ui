@@ -3,7 +3,7 @@ import { Nav } from "./components/navigation/nav";
 import { Dashboard } from "./components/dashboard/main";
 import { Teams } from "./components/teams/main";
 import { Players } from "./components/players/main";
-// import Schedule from "./components/Schedule";
+import { Schedule } from "./components/schedule/main";
 
 export default function App() {
   return (
@@ -30,7 +30,12 @@ export default function App() {
               </div>
               } 
             />
-            {/* <Route path="/schedule" element={<Schedule />} /> */}
+            <Route path="/schedule" element={
+              <div className="flex-1 overflow-y-auto">
+                <Schedule />
+              </div>
+              } 
+            />
           </Routes>
         </main>
       </div>

@@ -26,7 +26,7 @@ export function Dashboard() {
           </CardContent>
         </Card>
 
-        <Card className="lg:col-span-3 shadow-none border-none bg-accent dark:bg-accent/50">
+        <Card className="lg:col-span-3 shadow-none border-none bg-accent dark:bg-accent/50 rounded-sm">
           <CardHeader className="mb-0 pb-0">
             <CardTitle>Top Performers</CardTitle>
             <CardDescription>Leading players this week</CardDescription>
@@ -37,7 +37,7 @@ export function Dashboard() {
         </Card>
       </div>
 
-      <Card className="lg:col-span-4 bg-transparent shadow-none gap-4">
+      <Card className="lg:col-span-4 bg-transparent shadow-none gap-4 border-none">
         <CardHeader className="mb-0 pb-0">
           <CardTitle>Recent Games</CardTitle>
           <CardDescription>Latest game results and upcoming matches</CardDescription>

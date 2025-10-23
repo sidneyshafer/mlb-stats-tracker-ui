@@ -32,7 +32,7 @@ export function RecentGames({ type }: { type: "recent" | "upcoming" }) {
                 <p className="text-xs text-muted-foreground">Home</p>
               </div>
             </div>
-            <Badge variant="outline" className="font-bold text-sm">{game.time}</Badge>
+            <Badge variant="outline" className="font-bold text-sm bg-white dark:bg-muted/50">{game.time}</Badge>
           </div>
         ))}
       </div>
@@ -62,7 +62,7 @@ export function RecentGames({ type }: { type: "recent" | "upcoming" }) {
           </div>
           <Badge 
             variant={game.status.includes("Live") ? "default" : "secondary"}
-            className="font-bold text-sm text-white"
+            className="text-sm text-white"
             >
                 {game.status}
           </Badge>
