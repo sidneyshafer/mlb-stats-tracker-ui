@@ -12,7 +12,7 @@ export function Schedule() {
         <p className="text-muted-foreground mt-2">{"View upcoming games and season schedule"}</p>
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-3">
+      <div className="grid gap-6 lg:grid-cols-3 h-[470px]">
         <Card className="lg:col-span-2 bg-transparent shadow-none gap-4 border-none">
           <CardHeader className="m-0 p-0">
             <CardTitle>{"Today's Games"}</CardTitle>
@@ -41,9 +41,9 @@ export function Schedule() {
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="week" className="w-full">
-            <TabsList>
-              <TabsTrigger value="week">This Week</TabsTrigger>
-              <TabsTrigger value="month">This Month</TabsTrigger>
+            <TabsList className="rounded-sm dark:bg-accent">
+              <TabsTrigger value="week" className="rounded-sm">This Week</TabsTrigger>
+              <TabsTrigger value="month" className="rounded-sm">This Month</TabsTrigger>
             </TabsList>
             <TabsContent value="week" className="mt-6">
               <ScheduleCalendar view="week" />

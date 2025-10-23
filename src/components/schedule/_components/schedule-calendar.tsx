@@ -73,7 +73,7 @@ export function ScheduleCalendar({ view }: { view: "week" | "month" }) {
             {day.games.map((game, gameIndex) => (
               <Card
                 key={gameIndex}
-                className="p-3 hover:border-primary/50 transition-colors cursor-pointer flex items-center justify-between"
+                className="p-3 hover:border-primary/50 transition-colors flex items-center justify-between"
               >
                 <div className="flex items-center gap-4">
                   <span className="font-medium text-sm">
