@@ -1,5 +1,3 @@
-"use client"
-
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
@@ -23,10 +21,10 @@ export function TeamDetailModal({ open, onOpenChange, team }: TeamDetailModalPro
   if (!team) return null
 
   const winPct = (team.wins / (team.wins + team.losses)) * 100
-  const gamesBack = 0 // Mock data
-  const streak = "W3" // Mock data
-  const runsScored = 745 // Mock data
-  const runsAllowed = 678 // Mock data
+  const gamesBack = 0
+  const streak = "W3"
+  const runsScored = 745
+  const runsAllowed = 678
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
