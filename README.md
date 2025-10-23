@@ -1,73 +1,85 @@
-# React + TypeScript + Vite
+# ⚾ MLB Stats Tracker UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, data-driven web application UI for exploring Major League Baseball (MLB) team and player statistics, built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+The interface provides real-time dashboards, team overviews, player performance insights, and schedule management — all styled with Tailwind CSS and Shadcn UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+----
 
-## React Compiler
+## 🧠 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+MLB Stats Tracker UI allows users to explore MLB data through a clean and responsive interface.
+The app features dedicated pages for:
 
-## Expanding the ESLint configuration
+* Dashboard: Overview of division standings, top performers, and recent/upcoming games.
+* Teams: Explore team stats, league performance, and division-level insights.
+* Players: Compare player performance, track leaders, and visualize seasonal trends.
+* Schedule: View daily games, weekly summaries, and full season calendars.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+----
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧰 Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+**Frontend Framework:**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* ⚛️ React (with Vite for fast bundling)
+* 🧩 TypeScript
+* 🎨 Tailwind CSS
+* 💎 Shadcn UI Components
+
+**Routing:**
+* React Router DOM
+
+**State & Theming:**
+* Context-based `ThemeProvider` for light/dark mode and theme persistence
+
+----
+
+## 🗂️ Project Structure
+```graphql
+src/
+├── components/
+│   ├── theme/                 # ThemeProvider and theme configuration
+│   ├── navigation/            # App navigation bar and layout
+│   ├── dashboard/             # Dashboard components and widgets
+│   ├── teams/                 # Team grid, stats, and league tabs
+│   ├── players/               # Player stats, leaderboards, and charts
+│   ├── schedule/              # Game schedule, charts, and calendar
+│   └── ui/                    # Shadcn UI wrappers (Cards, Tabs, etc.)
+│
+├── App.tsx                    # Main routing and layout structure
+├── main.tsx                   # Application entry point
+├── global.css                 # Tailwind base and custom global styles
+└── index.html                 # Root HTML template
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+----
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/mlb-stats-tracker-ui.git
+cd mlb-stats-tracker-ui
 ```
+
+### 2️⃣ Install Dependencies
+```bash
+npm install
+# or
+bun install
+# or
+yarn install
+```
+
+### 3️⃣ Start Development Server
+```bash
+npm run dev
+```
+Your app will be available at `http://localhost:5173`
+
+### 4️⃣ Build for Production
+```bash
+npm run build
+```
+
+----
