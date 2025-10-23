@@ -61,7 +61,7 @@ export function GameDetailModal({ open, onOpenChange, game }: GameDetailModalPro
         </DialogHeader>
 
         <div className="space-y-6">
-          <div className="flex flex-col items-center rounded-sm border border-border bg-card p-5 shadow-sm transition hover:shadow-md">
+          <div className="flex flex-col items-center rounded-sm border border-border bg-card p-5">
             {/* Teams row */}
             <div className="flex w-full items-center justify-between">
                 {/* Away team */}
