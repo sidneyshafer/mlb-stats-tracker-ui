@@ -29,7 +29,7 @@ export function Teams() {
       </Tabs>
 
       <Card className="lg:col-span-4 bg-transparent border-none shadow-none">
-        <CardHeader>
+        <CardHeader className="mb-0 pb-0">
           <CardTitle>League Statistics</CardTitle>
           <CardDescription>Comparative team performance metrics</CardDescription>
         </CardHeader>
