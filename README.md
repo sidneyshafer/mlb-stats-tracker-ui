@@ -83,3 +83,12 @@ npm run build
 ```
 
 ----
+
+## 📸 Screenshots
+
+![Dashboard Preview](./src/assets/dashboard-demo-1.png)
+![Teams Page](./src/assets/teams-demo.png)
+![Players Page](./src/assets/players-demo-1.png)
+![Players Page Modal](./src/assets/players-demo-2.png)
+![Schedule Page](./src/assets/schedule-demo-1.png)
+![Schedule Page Modal](./src/assets/schedule-demo-2.png)
