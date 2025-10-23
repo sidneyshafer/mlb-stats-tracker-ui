@@ -30,7 +30,7 @@ export function Nav() {
               className={cn(
                 "px-4 py-2 text-sm font-medium transition-colors hover:text-black dark:hover:text-white",
                 pathname === item.href
-                  ? "border-b-2 border-primary text-primary hover:text-primary dark:hover:text-primary"
+                  ? "border-b-2 border-black dark:border-white"
                   : "text-muted-foreground"
               )}
             >
