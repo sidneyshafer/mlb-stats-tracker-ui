@@ -2,7 +2,7 @@
 
 A modern, data-driven web application UI for exploring Major League Baseball (MLB) team and player statistics, built with React, TypeScript, and Vite.
 
-The interface provides real-time dashboards, team overviews, player performance insights, and schedule management — all styled with Tailwind CSS and Shadcn UI.
+The interface provides real-time dashboards, team overviews, player performance insights, and schedule management — all styled with [Tailwind CSS](https://tailwindcss.com) and [Shadcn UI](https://ui.shadcn.com/).
 
 ----
 
