@@ -2,21 +2,7 @@ import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { TeamDetailModal } from "@/components/modals/team-detail-modal"
-
-const teams = [
-  { name: "New York Yankees", abbr: "NYY", league: "AL", division: "East", wins: 95, losses: 67, logo: "⚾" },
-  { name: "Los Angeles Dodgers", abbr: "LAD", league: "NL", division: "West", wins: 98, losses: 64, logo: "⚾" },
-  { name: "Atlanta Braves", abbr: "ATL", league: "NL", division: "East", wins: 94, losses: 68, logo: "⚾" },
-  { name: "Houston Astros", abbr: "HOU", league: "AL", division: "West", wins: 92, losses: 70, logo: "⚾" },
-  { name: "Tampa Bay Rays", abbr: "TB", league: "AL", division: "East", wins: 91, losses: 71, logo: "⚾" },
-  { name: "San Francisco Giants", abbr: "SF", league: "NL", division: "West", wins: 89, losses: 73, logo: "⚾" },
-  { name: "Boston Red Sox", abbr: "BOS", league: "AL", division: "East", wins: 88, losses: 74, logo: "⚾" },
-  { name: "Chicago Cubs", abbr: "CHC", league: "NL", division: "Central", wins: 85, losses: 77, logo: "⚾" },
-  { name: "Cleveland Guardians", abbr: "CLE", league: "AL", division: "Central", wins: 88, losses: 74, logo: "⚾" },
-  { name: "Philadelphia Phillies", abbr: "PHI", league: "NL", division: "East", wins: 87, losses: 75, logo: "⚾" },
-  { name: "Seattle Mariners", abbr: "SEA", league: "AL", division: "West", wins: 86, losses: 76, logo: "⚾" },
-  { name: "St. Louis Cardinals", abbr: "STL", league: "NL", division: "Central", wins: 84, losses: 78, logo: "⚾" },
-]
+import { teams } from "@/data/data"
 
 export function TeamGrid({ league }: { league: "all" | "al" | "nl" }) {
   const [selectedTeam, setSelectedTeam] = useState<(typeof teams)[0] | null>(null)

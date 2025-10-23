@@ -2,25 +2,14 @@
 
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
 import { MapPin, Calendar, Clock, Users } from "lucide-react"
 import { cn } from "@/lib/utils"
+import type { game } from "@/data/types"
 
 interface GameDetailModalProps {
   open: boolean
   onOpenChange: (open: boolean) => void
-  game: {
-    id: number
-    home: string
-    homeAbbr: string
-    homeScore?: number
-    away: string
-    awayAbbr: string
-    awayScore?: number
-    time: string
-    venue: string
-    status: string
-  } | null
+  game: game | null
 }
 
 export function GameDetailModal({ open, onOpenChange, game }: GameDetailModalProps) {

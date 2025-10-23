@@ -1,37 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-
-const performers = [
-  {
-    name: "Shohei Ohtani",
-    team: "LAD",
-    stat: ".342 AVG",
-    image: "/baseball-player.png",
-  },
-  {
-    name: "Aaron Judge",
-    team: "NYY",
-    stat: "52 HR",
-    image: "/baseball-player.png",
-  },
-  {
-    name: "Ronald Acuña Jr.",
-    team: "ATL",
-    stat: "45 SB",
-    image: "/baseball-player.png",
-  },
-  {
-    name: "Gerrit Cole",
-    team: "NYY",
-    stat: "2.85 ERA",
-    image: "/baseball-player.png",
-  },
-  {
-    name: "Mookie Betts",
-    team: "LAD",
-    stat: "115 RBI",
-    image: "/baseball-player.png",
-  },
-]
+import { performers } from "@/data/data"
 
 export function TopPerformers() {
   return (

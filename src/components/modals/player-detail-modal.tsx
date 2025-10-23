@@ -5,17 +5,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { TrendingUp, Award, Target } from "lucide-react"
+import type { player } from "@/data/types"
 
 interface PlayerDetailModalProps {
   open: boolean
   onOpenChange: (open: boolean) => void
-  player: {
-    rank: number
-    name: string
-    team: string
-    stat: string
-    games: number
-  } | null
+  player: player | null
   category: "batting" | "pitching"
 }
 
@@ -161,7 +156,7 @@ export function PlayerDetailModal({ open, onOpenChange, player, category }: Play
             </div>
             <p className="text-sm text-muted-foreground">
               {isBatter
-                ? `On pace for ${Math.round((additionalStats.homeRuns ?? 0 / player.games) * 162)} home runs and ${Math.round((additionalStats.rbi ?? 0 / player.games) * 162)} RBI over a full season.`
+                ? `On pace for ${Math.round((additionalStats.homeRuns ?? 0 / (player.games ?? 0)) * 162)} home runs and ${Math.round((additionalStats.rbi ?? 0 / (player.games ?? 0)) * 162)} RBI over a full season.`
                 : `Averaging ${(additionalStats.strikeouts ?? 0 / Number.parseFloat((additionalStats.innings || "").replace(/\.\d+$/, ""))).toFixed(2)} strikeouts per inning with a ${additionalStats.wins}-${additionalStats.losses} record.`}
             </p>
           </div>

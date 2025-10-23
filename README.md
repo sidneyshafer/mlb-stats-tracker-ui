@@ -11,10 +11,10 @@ The interface provides dashboards, team overviews, player performance insights, 
 MLB Stats Tracker UI allows users to explore MLB data through a clean and responsive interface.
 The app features dedicated pages for:
 
-* Dashboard: Overview of division standings, top performers, and recent/upcoming games.
-* Teams: Explore team stats, league performance, and division-level insights.
-* Players: Compare player performance, track leaders, and visualize seasonal trends.
-* Schedule: View daily games, weekly summaries, and full season calendars.
+* *Dashboard:* Overview of division standings, top performers, and recent/upcoming games.
+* *Teams:* Explore team stats, league performance, and division-level insights.
+* *Players:* Compare player performance, track leaders, and visualize seasonal trends.
+* *Schedule:* View daily games, weekly summaries, and full season calendars.
 
 ----
 

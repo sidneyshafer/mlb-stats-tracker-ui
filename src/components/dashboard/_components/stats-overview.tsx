@@ -1,36 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { TrendingUp, TrendingDown, Users, Calendar } from "lucide-react"
-
-const stats = [
-  {
-    title: "Total Games",
-    value: "2,430",
-    change: "+12.5%",
-    trend: "up",
-    icon: Calendar,
-  },
-  {
-    title: "Active Players",
-    value: "1,200",
-    change: "+4.2%",
-    trend: "up",
-    icon: Users,
-  },
-  {
-    title: "Avg Attendance",
-    value: "28,456",
-    change: "-2.1%",
-    trend: "down",
-    icon: TrendingUp,
-  },
-  {
-    title: "Games Today",
-    value: "15",
-    change: "Schedule",
-    trend: "neutral",
-    icon: Calendar,
-  },
-]
+import { TrendingUp, TrendingDown } from "lucide-react"
+import { stats } from "@/data/data"
 
 export function StatsOverview() {
   return (

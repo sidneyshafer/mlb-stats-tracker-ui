@@ -3,63 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { MapPin } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { GameDetailModal } from "@/components/modals/game-detail-modal"
-
-const games = [
-  {
-    id: 1,
-    home: "New York Yankees",
-    homeAbbr: "NYY",
-    away: "Boston Red Sox",
-    awayAbbr: "BOS",
-    time: "7:05 PM ET",
-    venue: "Yankee Stadium",
-    status: "upcoming",
-  },
-  {
-    id: 2,
-    home: "Los Angeles Dodgers",
-    homeAbbr: "LAD",
-    away: "San Francisco Giants",
-    awayAbbr: "SF",
-    time: "10:10 PM ET",
-    venue: "Dodger Stadium",
-    status: "upcoming",
-  },
-  {
-    id: 3,
-    home: "Houston Astros",
-    homeAbbr: "HOU",
-    homeScore: 4,
-    away: "Texas Rangers",
-    awayAbbr: "TEX",
-    awayScore: 4,
-    time: "Live - 7th",
-    venue: "Minute Maid Park",
-    status: "live",
-  },
-  {
-    id: 4,
-    home: "Atlanta Braves",
-    homeAbbr: "ATL",
-    homeScore: 6,
-    away: "New York Mets",
-    awayAbbr: "NYM",
-    awayScore: 1,
-    time: "Final",
-    venue: "Truist Park",
-    status: "final",
-  },
-  {
-    id: 5,
-    home: "Chicago Cubs",
-    homeAbbr: "CHC",
-    away: "St. Louis Cardinals",
-    awayAbbr: "STL",
-    time: "8:05 PM ET",
-    venue: "Wrigley Field",
-    status: "upcoming",
-  },
-]
+import { games } from "@/data/data"
 
 export function GamesList() {
   const [selectedGame, setSelectedGame] = useState<(typeof games)[0] | null>(null)

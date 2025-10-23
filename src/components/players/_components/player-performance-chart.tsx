@@ -1,23 +1,6 @@
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis, Legend, ResponsiveContainer } from "recharts"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
-
-const battingData = [
-  { month: "Apr", homeRuns: 42, rbi: 156, avg: 0.265 },
-  { month: "May", homeRuns: 58, rbi: 189, avg: 0.278 },
-  { month: "Jun", homeRuns: 64, rbi: 205, avg: 0.285 },
-  { month: "Jul", homeRuns: 71, rbi: 218, avg: 0.292 },
-  { month: "Aug", homeRuns: 68, rbi: 201, avg: 0.288 },
-  { month: "Sep", homeRuns: 55, rbi: 178, avg: 0.281 },
-]
-
-const pitchingData = [
-  { month: "Apr", strikeouts: 245, era: 3.85, wins: 42 },
-  { month: "May", strikeouts: 268, era: 3.72, wins: 48 },
-  { month: "Jun", strikeouts: 285, era: 3.65, wins: 52 },
-  { month: "Jul", strikeouts: 292, era: 3.58, wins: 55 },
-  { month: "Aug", strikeouts: 278, era: 3.62, wins: 51 },
-  { month: "Sep", strikeouts: 261, era: 3.68, wins: 46 },
-]
+import { battingData, pitchingData } from "@/data/data"
 
 export function PlayerPerformanceChart({ type }: { type: "batting" | "pitching" }) {
   if (type === "pitching") {

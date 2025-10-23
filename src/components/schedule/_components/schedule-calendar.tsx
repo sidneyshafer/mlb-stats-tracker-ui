@@ -1,49 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-
-const weekSchedule = [
-  {
-    date: "Mon, Oct 21",
-    games: [
-      { away: "NYY", home: "BOS", time: "7:05 PM" },
-      { away: "LAD", home: "SF", time: "10:10 PM" },
-    ],
-  },
-  {
-    date: "Tue, Oct 22",
-    games: [
-      { away: "ATL", home: "NYM", time: "7:10 PM" },
-      { away: "HOU", home: "TEX", time: "8:05 PM" },
-      { away: "CHC", home: "STL", time: "7:45 PM" },
-    ],
-  },
-  {
-    date: "Wed, Oct 23",
-    games: [
-      { away: "BOS", home: "TB", time: "6:40 PM" },
-      { away: "PHI", home: "WSH", time: "7:05 PM" },
-    ],
-  },
-  {
-    date: "Thu, Oct 24",
-    games: [{ away: "SEA", home: "LAA", time: "9:38 PM" }],
-  },
-  {
-    date: "Fri, Oct 25",
-    games: [
-      { away: "NYY", home: "TB", time: "7:10 PM" },
-      { away: "LAD", home: "SD", time: "9:40 PM" },
-      { away: "CLE", home: "DET", time: "7:10 PM" },
-    ],
-  },
-]
-
-const monthSchedule = [
-  { date: "Week of Oct 21", gameCount: 45 },
-  { date: "Week of Oct 28", gameCount: 42 },
-  { date: "Week of Nov 4", gameCount: 38 },
-  { date: "Week of Nov 11", gameCount: 35 },
-]
+import { weekSchedule, monthSchedule } from "@/data/data"
 
 export function ScheduleCalendar({ view }: { view: "week" | "month" }) {
   if (view === "month") {
@@ -54,9 +11,9 @@ export function ScheduleCalendar({ view }: { view: "week" | "month" }) {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-medium">{week.date}</p>
-                <p className="text-sm text-muted-foreground mt-1">{week.gameCount} games scheduled</p>
+                <p className="text-sm text-muted-foreground mt-1">{week.games} games scheduled</p>
               </div>
-              <Badge variant="outline">{week.gameCount}</Badge>
+              <Badge variant="outline">{week.games}</Badge>
             </div>
           </Card>
         ))}

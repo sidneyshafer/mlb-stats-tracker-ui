@@ -2,19 +2,12 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { TrendingUp, TrendingDown, Users, Trophy } from "lucide-react"
+import type { team } from "@/data/types"
 
 interface TeamDetailModalProps {
   open: boolean
   onOpenChange: (open: boolean) => void
-  team: {
-    name: string
-    abbr: string
-    league: string
-    division: string
-    wins: number
-    losses: number
-    logo: string
-  } | null
+  team: team | null
 }
 
 export function TeamDetailModal({ open, onOpenChange, team }: TeamDetailModalProps) {
