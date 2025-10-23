@@ -58,7 +58,7 @@ src/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/mlb-stats-tracker-ui.git
+git clone https://github.com/sidneyshafer/mlb-stats-tracker-ui.git
 cd mlb-stats-tracker-ui
 ```
 
